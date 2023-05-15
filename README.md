@@ -41,7 +41,14 @@ The Cloud Native Mobile App offers a range of features to support your mobile ap
 - **Serverless Computing**: Leveraging AWS Lambda and other serverless services, the app eliminates the need for managing infrastructure and automatically scales based on demand.
 - **AWS Integration**: The app integrates with various AWS services, including AWS Lambda, Amazon API Gateway, Amazon DynamoDB, and Amazon S3, to provide a robust and scalable backend for your mobile app.
 - **Cross-platform Development**: The app supports both iOS and Android platforms, allowing you to develop a single codebase that can be deployed to multiple platforms.
+- **High availability and fault tolerance**: The app ensures high availability even in the event of failures, utilizing AWS services such as auto-scaling groups and load balancers.
+- **Auto-scaling and load balancing**: The app automatically scales based on demand, ensuring optimal performance and high availability.
+- **CI/CD Pipeline**: Automate the build, test, and deployment processes for efficient development and release cycles.
+- **Infrastructure as Code (IaC) Pipeline**: Automate the provisioning and management of infrastructure resources using AWS CloudFormation and CI/CD principles.
 - **Authentication and Authorization**: Built-in authentication and authorization mechanisms, such as Amazon Cognito, ensure secure access to your app's resources.
+- **Data storage and retrieval**: Amazon DynamoDB is utilized as a highly scalable and performant NoSQL database for efficient data storage and retrieval.
+- **Networking**: The app utilizes Amazon API Gateway and AWS AppSync to enable efficient communication between mobile clients and backend services.
+- **Security**: End-to-end security measures, including data encryption, secure access control, and AWS Identity and Access Management (IAM) policies, ensure the protection of sensitive data.
 - **Offline Data Synchronization**: The app incorporates offline data synchronization capabilities, allowing users to access and modify data even when offline, with automatic synchronization when connectivity is restored.
 - **Push Notifications**: Integrated push notification support enables you to engage with your app users and send targeted messages.
 - **Logging and Monitoring**: The app includes logging and monitoring capabilities to track app performance, diagnose issues, and gain insights into user behavior.
