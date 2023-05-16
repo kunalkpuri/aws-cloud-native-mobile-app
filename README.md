@@ -56,6 +56,8 @@ The Cloud Native Mobile App offers a range of features to support your mobile ap
 
 
 ## Getting Started
+<details>
+<summary>Getting Started</summary>
 
 Follow the steps below to get started with the Cloud Native Mobile App:
 
@@ -157,8 +159,11 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
    Replace *`<your-s3-bucket-name>`* with the name of the S3 bucket you created during the backend setup.
 
 6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the S3 bucket URL.
+</details>
 
 ## Deployment
+<details>
+<summary>Deployment</summary>
 To deploy the Cloud Native Mobile App, follow these steps:
 
 1. Clone the Git repository:
@@ -187,9 +192,13 @@ To deploy the Cloud Native Mobile App, follow these steps:
 
 6. After the deployment is complete, take note of the output information provided by the script, such as API endpoint URLs, AWS service names, etc. These details will be needed for testing and interacting with the deployed app.
 
-
+</details>
+  
 ## CI/CD Pipeline
-The Cloud Native Mobile App uses a CI/CD pipeline to automate the build, test, and deployment process. The pipeline is configured using AWS CodePipeline, AWS CodeBuild, and other related services.
+<details>
+<summary>CI/CD Pipeline</summary>
+
+  The Cloud Native Mobile App uses a CI/CD pipeline to automate the build, test, and deployment process. The pipeline is configured using AWS CodePipeline, AWS CodeBuild, and other related services.
 
 To set up the CI/CD pipeline, follow these steps:
 
@@ -210,7 +219,8 @@ To set up the CI/CD pipeline, follow these steps:
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are pushed to the configured source repository. The pipeline will build, test, and deploy the app automatically based on the defined stages.
-
+</details>
+  
 ## IaC Pipeline
 <details>
 <summary>IaC Pipeline</summary>
@@ -236,8 +246,11 @@ To set up the IaC pipeline, follow these steps:
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are made to the infrastructure code. The pipeline will provision and manage the backend infrastructure automatically based on the defined stages.
+</details>
 
 ## Publishing to App Stores
+<details>
+<summary>Publishing to App Stores</summary>
 
 To publish the Cloud Native Mobile App to the respective app stores (Google Play Store and Apple App Store), follow the steps below:
 
@@ -261,7 +274,7 @@ To publish the Cloud Native Mobile App to the respective app stores (Google Play
 5. Complete the necessary steps for app listing, content rating, and pricing.
 
 6. Submit the app for review and wait for the approval process to complete.
-
+  
 ### Publishing to Apple App Store
 
 1. Build the iOS application using Xcode:
@@ -285,8 +298,12 @@ To publish the Cloud Native Mobile App to the respective app stores (Google Play
 
 Please note that publishing to app stores may require additional configurations, certificates, and provisioning profiles specific to each platform. Refer to the respective app store documentation for more detailed instructions.
 
-## Contributing
+</details>
 
+## Contributing
+<details>
+<summary>Contributing</summary>
+  
 Contributions to the Cloud Native Mobile App are welcome and encouraged! If you would like to contribute, please follow these steps:
 
 1. Fork the repository on GitHub.
@@ -322,6 +339,8 @@ Contributions to the Cloud Native Mobile App are welcome and encouraged! If you 
 
 Thank you for contributing to the Cloud Native Mobile App!
 
+</details>
+  
 ## License
 
 The Cloud Native Mobile App is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
