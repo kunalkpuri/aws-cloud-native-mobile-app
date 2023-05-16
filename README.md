@@ -81,6 +81,7 @@ Next, you need to configure the AWS CLI with your credentials. Open a terminal o
 
 ```bash
 aws configure
+```
 
 Provide your access key ID, secret access key, AWS region, and default output format when prompted.
 
@@ -91,17 +92,20 @@ To set up the backend services of the Cloud Native Mobile App, follow these step
 
    ```bash
    git clone https://github.com/your-username/cloud-native-mobile-app.git
+   ```
 
 2. Navigate to the backend directory:
 
    ```bash
    cd cloud-native-mobile-app/backend
+   ```
 
 3. Initialize the Terraform project by running:
 
    ```bash
    terraform init
-
+   ```
+   
 4. Configure the backend infrastructure by setting appropriate values in the variables.tf file.
 
 - Replace the <your-aws-region> placeholder with your desired AWS region.
@@ -111,7 +115,8 @@ To set up the backend services of the Cloud Native Mobile App, follow these step
 
    ```bash
    terraform apply
-
+   ```
+  
 Review the planned changes and confirm the execution by typing *`yes`* when prompted.
 
 6. Once the infrastructure is provisioned, note down the output values displayed by Terraform. These include endpoint URLs, bucket names, or other configuration details that you will need in the subsequent steps.
@@ -124,12 +129,14 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
 
    ```bash
    cd ../frontend
-
+   ```
+  
 2. Install the necessary dependencies:
 
    ```bash
    npm install
-
+   ```
+  
 3. Update the configuration file with the backend endpoint URL and other necessary details.
 
 - Open the src/config.js file.
@@ -139,12 +146,14 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
 
    ```bash
    npm run build
-
+   ```
+  
 5. Deploy the frontend to AWS S3:
 
    ```bash
    aws s3 sync build/ s3://<your-s3-bucket-name>
-   
+   ```
+  
    Replace *`<your-s3-bucket-name>`* with the name of the S3 bucket you created during the backend setup.
 
 6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the S3 bucket URL.
@@ -156,12 +165,14 @@ To deploy the Cloud Native Mobile App, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/cloud-native-mobile-app.git
-
+   ```
+  
 2. Navigate to the project directory:
 
    ```bash
    cd cloud-native-mobile-app
-
+   ```
+  
 3. Set up your AWS credentials by configuring the AWS CLI. Ensure you have the necessary access and credentials to deploy AWS resources.
 
 4. Update the necessary configurations in the deployment script (`deploy.sh`) according to your requirements. Replace the placeholder values with your desired settings.
@@ -170,7 +181,8 @@ To deploy the Cloud Native Mobile App, follow these steps:
 
    ```bash
    ./deploy.sh
-
+   ```
+  
    The script will utilize CloudFormation to create the required resources, such as AWS Lambda functions, API Gateway endpoints, and DynamoDB tables.
 
 6. After the deployment is complete, take note of the output information provided by the script, such as API endpoint URLs, AWS service names, etc. These details will be needed for testing and interacting with the deployed app.
@@ -185,14 +197,16 @@ To set up the CI/CD pipeline, follow these steps:
 
    ```bash
    cd pipeline
-
+   ```
+  
 2. Open the `pipeline.yaml` file and update the configuration as needed. Ensure that the source, build, and deploy stages are configured correctly based on your environment.
 
 3. Deploy the pipeline using the AWS CloudFormation stack:
 
    ```bash
    aws cloudformation deploy --template-file pipeline.yaml --stack-name cloud-native-mobile-app-pipeline --capabilities CAPABILITY_IAM
-
+   ```
+  
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are pushed to the configured source repository. The pipeline will build, test, and deploy the app automatically based on the defined stages.
@@ -210,14 +224,16 @@ To set up the IaC pipeline, follow these steps:
 
    ```bash
    cd iac-pipeline
-
+   ```
+  
 2. Open the `pipeline.yaml` file and update the configuration as needed. Ensure that the source and deploy stages are configured correctly based on your environment.
 
 3. Deploy the pipeline using the AWS CloudFormation stack:
 
    ```bash
    aws cloudformation deploy --template-file pipeline.yaml --stack-name cloud-native-mobile-app-iac-pipeline --capabilities CAPABILITY_IAM
-
+   ```
+  
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are made to the infrastructure code. The pipeline will provision and manage the backend infrastructure automatically based on the defined stages.
@@ -233,7 +249,8 @@ To publish the Cloud Native Mobile App to the respective app stores (Google Play
    ```bash
    cd android
    ./gradlew assembleRelease
-
+   ```
+  
    The APK file will be generated in the `android/app/build/outputs/apk/release` directory.
 
 2. Sign in to your Google Play Developer Console.
@@ -279,21 +296,23 @@ Contributions to the Cloud Native Mobile App are welcome and encouraged! If you 
 
    ```bash
    git clone https://github.com/your-username/cloud-native-mobile-app.git
-
+   ```
+  
 3. Create a new branch for your feature or bug fix:
 
    ```bash
    git checkout -b your-branch-name
-
+   ```
+  
 4. Make the necessary changes to the codebase.
 
 5. Commit your changes with descriptive commit messages:
 
-   ```bash
+  ```bash
    git commit -m "Your detailed commit message"
-
+   ```
+  
 6. Push your changes to your forked repository:
-
    ```bash
    git push origin your-branch-name
 
@@ -306,4 +325,3 @@ Thank you for contributing to the Cloud Native Mobile App!
 ##License
 
 The Cloud Native Mobile App is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
