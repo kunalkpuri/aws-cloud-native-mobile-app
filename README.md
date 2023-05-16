@@ -158,7 +158,7 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
 
 6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the S3 bucket URL.
 
-##Deployment
+## Deployment
 To deploy the Cloud Native Mobile App, follow these steps:
 
 1. Clone the Git repository:
@@ -188,7 +188,7 @@ To deploy the Cloud Native Mobile App, follow these steps:
 6. After the deployment is complete, take note of the output information provided by the script, such as API endpoint URLs, AWS service names, etc. These details will be needed for testing and interacting with the deployed app.
 
 
-##CI/CD Pipeline
+## CI/CD Pipeline
 The Cloud Native Mobile App uses a CI/CD pipeline to automate the build, test, and deployment process. The pipeline is configured using AWS CodePipeline, AWS CodeBuild, and other related services.
 
 To set up the CI/CD pipeline, follow these steps:
@@ -210,7 +210,6 @@ To set up the CI/CD pipeline, follow these steps:
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are pushed to the configured source repository. The pipeline will build, test, and deploy the app automatically based on the defined stages.
-
 
 ## IaC Pipeline
 <details>
@@ -286,7 +285,7 @@ To publish the Cloud Native Mobile App to the respective app stores (Google Play
 
 Please note that publishing to app stores may require additional configurations, certificates, and provisioning profiles specific to each platform. Refer to the respective app store documentation for more detailed instructions.
 
-##Contributing
+## Contributing
 
 Contributions to the Cloud Native Mobile App are welcome and encouraged! If you would like to contribute, please follow these steps:
 
@@ -315,13 +314,14 @@ Contributions to the Cloud Native Mobile App are welcome and encouraged! If you 
 6. Push your changes to your forked repository:
    ```bash
    git push origin your-branch-name
-
+   ```
+  
 7. Open a pull request on the main repository's `main` branch.
 
 8. Wait for the maintainers to review your pull request and address any feedback.
 
 Thank you for contributing to the Cloud Native Mobile App!
 
-##License
+## License
 
 The Cloud Native Mobile App is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
