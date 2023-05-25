@@ -148,15 +148,21 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
    npm run build
    ```
   
-5. Deploy the frontend to AWS S3:
+5. Choose one of the following deployment strategies for the frontend:
+
+a. S3 Deployment: Deploy the built frontend code to an S3 bucket. This strategy allows you to host the frontend as a static website using S3. Use the following command to deploy the frontend to AWS S3:
 
    ```bash
    aws s3 sync build/ s3://<your-s3-bucket-name>
    ```
   
-   Replace *`<your-s3-bucket-name>`* with the name of the S3 bucket you created during the backend setup.
+  Replace <your-s3-bucket-name> with the name of the S3 bucket you created during the backend setup.
 
-6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the S3 bucket URL.
+b. Elastic Beanstalk Deployment: Deploy the built frontend code to an Elastic Beanstalk environment. This strategy allows you to take advantage of the managed infrastructure and scaling capabilities provided by Elastic Beanstalk. Follow the Elastic Beanstalk documentation to create an environment and deploy your frontend code.
+
+c. AWS Amplify Deployment: Deploy the frontend code using AWS Amplify. AWS Amplify provides a simplified deployment workflow for frontend applications and integrates seamlessly with other AWS services. Follow the AWS Amplify documentation to set up an Amplify project and deploy your frontend.
+
+6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the corresponding endpoint provided by the chosen deployment strategy.
 
 ## Deployment
 
