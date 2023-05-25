@@ -157,11 +157,9 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
    Replace *`<your-s3-bucket-name>`* with the name of the S3 bucket you created during the backend setup.
 
 6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the S3 bucket URL.
-</details>
 
 ## Deployment
-<details>
-<summary>Deployment</summary>
+
 To deploy the Cloud Native Mobile App, follow these steps:
 
 1. Clone the Git repository:
