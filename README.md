@@ -317,7 +317,7 @@ Contributions to the Cloud Native Mobile App are welcome and encouraged! If you 
 
 5. Commit your changes with descriptive commit messages:
 
-  ```bash
+   ```bash
    git commit -m "Your detailed commit message"
    ```
   
