@@ -60,15 +60,31 @@ Follow the steps below to get started with the Cloud Native Mobile App:
 
 ### Prerequisites
 
-Before you begin, make sure you have the following prerequisites installed on your system:
+Before you begin developing a cross-platform mobile app with React Native, make sure you have the following prerequisites installed on your system:
 
-- **Git**: Install Git by following the instructions on the official Git website.
-- **Gradle**: Install Gradle by following the instructions on the official Gradle website.
-- **Android Studio**: Install Android Studio for Android development from the official Android Developer website.
-- **Xcode**: Install Xcode for iOS development from the official Apple Developer website.
-- **AWS Account**: Sign up for an AWS Account at https://aws.amazon.com/ and make sure you have the necessary access and credentials.
-- **Terraform**: Install Terraform by following the instructions on the official Terraform website.
-- **AWS CLI**: Install the AWS Command Line Interface (CLI) by following the instructions on the official AWS CLI documentation
+1. Git: Install Git by following the instructions on the official Git website.
+
+2. Node.js and npm: Install Node.js and npm (Node Package Manager) by downloading the installer from the official Node.js website or by using a package manager like Homebrew (for macOS and Linux) or Chocolatey (for Windows).
+
+3. Java Development Kit (JDK): Install the JDK to support Android development. Download and install the appropriate version for your operating system from the official Oracle website.
+
+4. Android Studio: Install Android Studio, which includes the Android development environment and tools needed to build and run Android apps. Android Studio provides the Gradle build system used for building React Native Android apps. You can download Android Studio from the official Android Developer website.
+
+5. Xcode: Install Xcode if you plan to develop and test your app on iOS devices or the iOS Simulator. Xcode provides the necessary tools, simulator, and frameworks for iOS app development. You can download Xcode from the Mac App Store or the official Apple Developer website.
+
+6. React Native CLI: Install the React Native Command Line Interface (CLI) globally using npm. The CLI provides commands for creating, building, and running React Native projects. Install it by running the following command in your terminal:
+
+   ```bash
+   npm install -g react-native-cli
+   ```
+
+7. AWS Account: Sign up for an AWS Account at https://aws.amazon.com/ and make sure you have the necessary access and credentials.
+
+8. AWS CLI: Install the AWS Command Line Interface (CLI) to interact with AWS services from the command line. The AWS CLI allows you to manage your AWS resources, configure credentials, and automate AWS operations. Install it by following the instructions in the official AWS CLI documentation.
+
+9. Terraform: Install Terraform, an Infrastructure as Code tool, to automate the provisioning and management of your backend infrastructure. Terraform enables you to define and deploy infrastructure resources using declarative configuration files. Install Terraform by following the instructions in the official Terraform documentation.
+
+By having these prerequisites in place, you'll be ready to set up your development environment, build your cross-platform mobile app, and interact with AWS services as well as automate infrastructure provisioning using Terraform.
 
 ### Setting Up AWS Credentials
 
