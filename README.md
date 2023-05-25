@@ -56,8 +56,6 @@ The Cloud Native Mobile App offers a range of features to support your mobile ap
 
 
 ## Getting Started
-<details>
-<summary>Getting Started</summary>
 
 Follow the steps below to get started with the Cloud Native Mobile App:
 
@@ -191,12 +189,8 @@ To deploy the Cloud Native Mobile App, follow these steps:
    The script will utilize CloudFormation to create the required resources, such as AWS Lambda functions, API Gateway endpoints, and DynamoDB tables.
 
 6. After the deployment is complete, take note of the output information provided by the script, such as API endpoint URLs, AWS service names, etc. These details will be needed for testing and interacting with the deployed app.
-
-</details>
   
 ## CI/CD Pipeline
-<details>
-<summary>CI/CD Pipeline</summary>
 
   The Cloud Native Mobile App uses a CI/CD pipeline to automate the build, test, and deployment process. The pipeline is configured using AWS CodePipeline, AWS CodeBuild, and other related services.
 
@@ -219,11 +213,8 @@ To set up the CI/CD pipeline, follow these steps:
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are pushed to the configured source repository. The pipeline will build, test, and deploy the app automatically based on the defined stages.
-</details>
   
 ## IaC Pipeline
-<details>
-<summary>IaC Pipeline</summary>
 
 The Cloud Native Mobile App also includes an Infrastructure as Code (IaC) pipeline to automate the provisioning and management of the backend infrastructure using Terraform.
 
@@ -298,11 +289,7 @@ To publish the Cloud Native Mobile App to the respective app stores (Google Play
 
 Please note that publishing to app stores may require additional configurations, certificates, and provisioning profiles specific to each platform. Refer to the respective app store documentation for more detailed instructions.
 
-</details>
-
 ## Contributing
-<details>
-<summary>Contributing</summary>
   
 Contributions to the Cloud Native Mobile App are welcome and encouraged! If you would like to contribute, please follow these steps:
 
@@ -338,8 +325,6 @@ Contributions to the Cloud Native Mobile App are welcome and encouraged! If you 
 8. Wait for the maintainers to review your pull request and address any feedback.
 
 Thank you for contributing to the Cloud Native Mobile App!
-
-</details>
   
 ## License
 
