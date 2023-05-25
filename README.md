@@ -67,6 +67,8 @@ Before you begin, make sure you have the following prerequisites installed on yo
 - **Android Studio**: Install Android Studio for Android development from the official Android Developer website.
 - **Xcode**: Install Xcode for iOS development from the official Apple Developer website.
 - **AWS Account**: Sign up for an AWS Account at https://aws.amazon.com/ and make sure you have the necessary access and credentials.
+- **Terraform**: Install Terraform by following the instructions on the official Terraform website.
+- **AWS CLI**: Install the AWS Command Line Interface (CLI) by following the instructions on the official AWS CLI documentation
 
 ### Setting Up AWS Credentials
 
