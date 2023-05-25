@@ -237,11 +237,8 @@ To set up the IaC pipeline, follow these steps:
    The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are made to the infrastructure code. The pipeline will provision and manage the backend infrastructure automatically based on the defined stages.
-</details>
 
 ## Publishing to App Stores
-<details>
-<summary>Publishing to App Stores</summary>
 
 To publish the Cloud Native Mobile App to the respective app stores (Google Play Store and Apple App Store), follow the steps below:
 
