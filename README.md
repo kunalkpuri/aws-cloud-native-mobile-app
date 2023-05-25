@@ -190,33 +190,66 @@ To deploy the Cloud Native Mobile App, follow these steps:
   
 ## CI/CD Pipeline
 
-  The Cloud Native Mobile App uses a CI/CD pipeline to automate the build, test, and deployment process. The pipeline is configured using AWS CodePipeline, AWS CodeBuild, and other related services.
+The CI/CD pipeline automates the build, test, and deployment process for your mobile app. It enables you to deliver updates to your app more efficiently and with higher quality.
 
-To set up the CI/CD pipeline, follow these steps:
+Before you begin, make sure you have the source code repository for your mobile app hosted in a version control system like Git.
 
-1. Navigate to the pipeline directory:
+### Step 1: Set up the Code Repository
 
-   ```bash
-   cd pipeline
-   ```
-  
-2. Open the `pipeline.yaml` file and update the configuration as needed. Ensure that the source, build, and deploy stages are configured correctly based on your environment.
+1. Create a repository for your mobile app's source code on a version control system like Git.
 
-3. Deploy the pipeline using the AWS CloudFormation stack:
+2. Push your mobile app's source code to the repository.
 
-   ```bash
-   aws cloudformation deploy --template-file pipeline.yaml --stack-name cloud-native-mobile-app-pipeline --capabilities CAPABILITY_IAM
-   ```
-  
-   The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
+### Step 2: Configure the Build Stage
 
-4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are pushed to the configured source repository. The pipeline will build, test, and deploy the app automatically based on the defined stages.
+1. Set up an AWS CodeBuild project that will build your mobile app.
+
+2. Configure the CodeBuild project to fetch the source code from your repository and execute build commands specific to your mobile app platform (e.g., Android or iOS).
+
+3. Define the build artifacts to be generated, such as the compiled app binaries or app bundles.
+
+### Step 3: Set up the Test Stage
+
+1. Determine the types of tests you want to include in your CI/CD pipeline, such as unit tests, integration tests, or UI tests.
+
+2. Use AWS services like AWS Device Farm or AWS Device Farm TestGrid to automate your mobile app tests. Configure the tests to run against real devices or emulators.
+
+### Step 4: Configure the Deployment Stage
+
+1. Determine the deployment strategy for your mobile app. It could involve deploying to app stores, distributing beta versions to testers, or using over-the-air (OTA) updates.
+
+2. Use AWS services like AWS Amplify, AWS AppSync, or AWS Mobile Hub to automate the deployment process. Configure the deployment to target specific app stores or distribution channels.
+
+### Step 5: Set up the CI/CD Pipeline
+
+1. Create an AWS CodePipeline pipeline to orchestrate the CI/CD process for your mobile app.
+
+2. Configure the pipeline stages to include source, build, test, and deploy actions.
+
+3. Define the input and output artifacts for each stage.
+
+4. Specify the triggers that will automatically start the pipeline whenever changes are pushed to the repository.
+
+### Step 6: Deploy the CI/CD Pipeline
+
+1. Deploy the CodePipeline pipeline using AWS CloudFormation or the AWS Management Console.
+
+2. Validate that the pipeline is successfully created and all stages are configured correctly.
+
+### Step 7: Monitor and Iterate
+
+1. Monitor the CI/CD pipeline and review the logs and metrics to identify any issues or bottlenecks.
+
+2. Iterate and improve your CI/CD process based on feedback and performance data.
+
+By following these steps, you can set up a robust CI/CD pipeline for your mobile app in AWS. The pipeline will automate the build, test, and deployment process, allowing you to deliver updates to your app more efficiently and reliably.
+
   
 ## IaC Pipeline
 
-The Cloud Native Mobile App also includes an Infrastructure as Code (IaC) pipeline to automate the provisioning and management of the backend infrastructure using Terraform.
+The Cloud Native Mobile App includes an Infrastructure as Code (IaC) pipeline to automate the provisioning and management of the backend infrastructure using Terraform.
 
-To set up the IaC pipeline, follow these steps:
+To set up the IaC pipeline with Terraform, follow these steps:
 
 1. Navigate to the `iac-pipeline` directory:
 
@@ -224,17 +257,20 @@ To set up the IaC pipeline, follow these steps:
    cd iac-pipeline
    ```
   
-2. Open the `pipeline.yaml` file and update the configuration as needed. Ensure that the source and deploy stages are configured correctly based on your environment.
+2. Open the 'pipeline.tf' file and update the configuration as needed. Ensure that the source and deploy stages are configured correctly based on your environment.
 
-3. Deploy the pipeline using the AWS CloudFormation stack:
+3. Deploy the pipeline using Terraform:
 
    ```bash
-   aws cloudformation deploy --template-file pipeline.yaml --stack-name cloud-native-mobile-app-iac-pipeline --capabilities CAPABILITY_IAM
+   terraform init
+   terraform plan
+   terraform apply
    ```
   
-   The deployment will create the necessary pipeline resources, such as CodePipeline, CodeBuild projects, and IAM roles.
+   The deployment will create the necessary backend infrastructure using Terraform.
 
 4. Once the deployment is complete, the pipeline will be triggered automatically whenever changes are made to the infrastructure code. The pipeline will provision and manage the backend infrastructure automatically based on the defined stages.
+
 
 ## Publishing to App Stores
 
