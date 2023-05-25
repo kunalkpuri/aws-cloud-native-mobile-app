@@ -12,7 +12,6 @@ The Cloud Native Mobile App is a comprehensive framework for developing scalable
   - [Setting Up AWS Credentials](#setting-up-aws-credentials)
   - [Setting Up the Backend](#setting-up-the-backend)
   - [Setting Up the Frontend](#setting-up-the-frontend)
-- [Deployment](#deployment)
 - [CI/CD Pipeline](#cicd-pipeline)
 - [IaC Pipeline](#iac-pipeline)
 - [Publishing to App Stores](#publishing-to-app-stores)
@@ -150,49 +149,19 @@ To set up the frontend of the Cloud Native Mobile App, follow these steps:
   
 5. Choose one of the following deployment strategies for the frontend:
 
-a. S3 Deployment: Deploy the built frontend code to an S3 bucket. This strategy allows you to host the frontend as a static website using S3. Use the following command to deploy the frontend to AWS S3:
+   a. S3 Deployment: Deploy the built frontend code to an S3 bucket. This strategy allows you to host the frontend as a static website using S3. Use the following command to deploy the frontend to AWS S3:
 
    ```bash
    aws s3 sync build/ s3://<your-s3-bucket-name>
    ```
   
-  Replace <your-s3-bucket-name> with the name of the S3 bucket you created during the backend setup.
+   Replace <your-s3-bucket-name> with the name of the S3 bucket you created during the backend setup.
 
-b. Elastic Beanstalk Deployment: Deploy the built frontend code to an Elastic Beanstalk environment. This strategy allows you to take advantage of the managed infrastructure and scaling capabilities provided by Elastic Beanstalk. Follow the Elastic Beanstalk documentation to create an environment and deploy your frontend code.
+   b. Elastic Beanstalk Deployment: Deploy the built frontend code to an Elastic Beanstalk environment. This strategy allows you to take advantage of the managed infrastructure and scaling capabilities provided by Elastic Beanstalk. Follow the Elastic Beanstalk documentation to create an environment and deploy your frontend code.
 
-c. AWS Amplify Deployment: Deploy the frontend code using AWS Amplify. AWS Amplify provides a simplified deployment workflow for frontend applications and integrates seamlessly with other AWS services. Follow the AWS Amplify documentation to set up an Amplify project and deploy your frontend.
+   c. AWS Amplify Deployment: Deploy the frontend code using AWS Amplify. AWS Amplify provides a simplified deployment workflow for frontend applications and integrates seamlessly with other AWS services. Follow the AWS Amplify documentation to set up an Amplify project and deploy your frontend.
 
 6. Once the deployment is complete, you can access the deployed frontend by visiting the configured domain or the corresponding endpoint provided by the chosen deployment strategy.
-
-## Deployment
-
-To deploy the Cloud Native Mobile App, follow these steps:
-
-1. Clone the Git repository:
-
-   ```bash
-   git clone https://github.com/your-username/cloud-native-mobile-app.git
-   ```
-  
-2. Navigate to the project directory:
-
-   ```bash
-   cd cloud-native-mobile-app
-   ```
-  
-3. Set up your AWS credentials by configuring the AWS CLI. Ensure you have the necessary access and credentials to deploy AWS resources.
-
-4. Update the necessary configurations in the deployment script (`deploy.sh`) according to your requirements. Replace the placeholder values with your desired settings.
-
-5. Run the deployment script to package and deploy the app's backend services:
-
-   ```bash
-   ./deploy.sh
-   ```
-  
-   The script will utilize CloudFormation to create the required resources, such as AWS Lambda functions, API Gateway endpoints, and DynamoDB tables.
-
-6. After the deployment is complete, take note of the output information provided by the script, such as API endpoint URLs, AWS service names, etc. These details will be needed for testing and interacting with the deployed app.
   
 ## CI/CD Pipeline
 
